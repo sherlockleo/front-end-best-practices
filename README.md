@@ -38,52 +38,52 @@ HTML5为我们提供大量的语义元素的目的就是为了准确地描述内
 <!-- bad -->
 <h1>
   <figure>
-    <img alt=Company src=logo.png>
+    <img alt="Company" src="logo.png">
   </figure>
 </h1>
 
 <!-- good -->
 <h1>
-  <img alt=Company src=logo.png>
+  <img alt="Company" src="logo.png">
 </h1>
 ```
 
 ### 简洁
 
-保持代码简洁。忘记你的旧 XHTM L的习惯。
+保持代码简洁。忘记你的旧 XHTML的习惯。
 
 ```html
 <!-- bad -->
 <!doctype html>
-<html lang=en>
+<html lang="en">
   <head>
-    <meta http-equiv=Content-Type content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Contact</title>
-    <link rel=stylesheet href=style.css type=text/css />
+    <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
     <h1>Contact me</h1>
     <label>
       Email address:
-      <input type=email placeholder=you@email.com required=required />
+      <input type="email" placeholder="you@email.com" required="required" />
     </label>
-    <script src=main.js type=text/javascript></script>
+    <script src="main.js" type="text/javascript"></script>
   </body>
 </html>
 
 <!-- good -->
 <!doctype html>
-<html lang=en>
-  <meta charset=utf-8>
+<html lang="en">
+  <meta charset="utf-8">
   <title>Contact</title>
-  <link rel=stylesheet href=style.css>
+  <link rel="stylesheet" href="style.css">
 
   <h1>Contact me</h1>
   <label>
     Email address:
-    <input type=email placeholder=you@email.com required>
+    <input type="email" placeholder="you@email.com" required>
   </label>
-  <script src=main.js></script>
+  <script src="main.js"></script>
 </html>
 ```
 
@@ -117,8 +117,8 @@ HTML5为我们提供大量的语义元素的目的就是为了准确地描述内
 
 <!-- good -->
 <!doctype html>
-<html lang=en>
-  <meta charset=utf-8>
+<html lang="en">
+  <meta charset="utf-8">
   <title>Hello, world.</title>
 </html>
 ```
@@ -130,17 +130,17 @@ HTML5为我们提供大量的语义元素的目的就是为了准确地描述内
 ```html
 <!-- bad -->
 <!doctype html>
-<meta charset=utf-8>
-<script src=analytics.js></script>
+<meta charset="utf-8">
+<script src="analytics.js"></script>
 <title>Hello, world.</title>
 <p>...</p>
 
 <!-- good -->
 <!doctype html>
-<meta charset=utf-8>
+<meta charset="utf-8">
 <title>Hello, world.</title>
 <p>...</p>
-<script src=analytics.js></script>
+<script src="analytics.js"></script>
 ```
 
 ## CSS
